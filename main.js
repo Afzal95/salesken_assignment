@@ -33,7 +33,7 @@ function can(m,id,color="grey"){
     canvas.style.width="10px";
     canvas.style.height="150px";
     context.fillStyle=`${color}`;
-    context.fillRect(0,0,80,150);
+    context.fillRect(0,0,120,150);
     div.appendChild(canvas);
 }
 // function for playing and pausing audio player
@@ -42,19 +42,19 @@ function play(){
 
     if(interval==undefined){
         aud.play();
-        document.getElementById("play").innerHTML=`<i class="fas fa-pause"></i>`
+        document.getElementById("play").innerHTML=`<i class="fas fa-pause fa-2x"></i>`
         interval=setInterval(()=>{
             time++;
             if(time>100){
                 clearInterval(interval);
                 aud.pause();
-                document.getElementById("play").innerHTML=`<i class="fas fa-play"></i>`        
+                document.getElementById("play").innerHTML=`<i class="fas fa-play fa-2x"></i>`        
             }
             colorUpdate();
         },1000)
     }else{
         aud.pause();
-        document.getElementById("play").innerHTML=`<i class="fas fa-play"></i>`        
+        document.getElementById("play").innerHTML=`<i class="fas fa-play fa-2x"></i>`        
         clearInterval(interval);
         interval=undefined;
     }

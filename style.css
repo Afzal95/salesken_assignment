@@ -7,16 +7,18 @@
 #main_div{
     height: 500px;
     width: 80%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     margin: auto;
     padding: 25px;
 }
+
 #button{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #button button:nth-child(odd) {
     color: #15aabf;
     padding: 3px 18px;
@@ -25,6 +27,7 @@
     border: 1px solid aqua;
     cursor: pointer;
 }
+
 #button button:nth-child(even) {
     color: #15aabf;
     padding: 15px 28px;
@@ -33,6 +36,9 @@
     border: 1px solid aqua;
     cursor: pointer;
 }
-.new{
-    color: red;
+
+.tag1{
+    display: absolute;
+    left: 400px;
+    top: 40px;
 }
